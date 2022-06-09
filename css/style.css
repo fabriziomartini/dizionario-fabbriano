@@ -54,3 +54,8 @@ ol.posts li {
     list-style: none;
     font-size: 0.9em;
 }
+
+ol {
+  font-size: 1.5em;
+  color: #333;
+}
