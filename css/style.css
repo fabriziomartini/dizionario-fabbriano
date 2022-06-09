@@ -42,4 +42,15 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    font-size: 0.9em;
+}
+
+ol.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ol.posts li {
+    list-style: none;
+    font-size: 0.9em;
 }
