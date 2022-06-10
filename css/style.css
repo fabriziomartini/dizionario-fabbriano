@@ -64,3 +64,7 @@ ol {
   line-height: 1.4em;
   color: #333;
 }
+
+div.container {
+  text-align: justify;
+} 
