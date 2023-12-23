@@ -70,13 +70,13 @@ div.blurb {
   text-align: justify;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .w3-container {
         display: flex;
         justify-content: space-between;
     }
-    ol {
-        flex-basis: 48%; /* Adjust the width as needed */
+    ol.posts {
+        flex-basis: 48%; /* Ajust the width as needed */
         margin: 0;
         padding: 0;
     }
