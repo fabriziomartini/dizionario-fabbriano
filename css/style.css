@@ -98,7 +98,8 @@ div.blurb {
 
 /* Media Query */
 @media only screen and (min-width: 768px) {
-   .blurb .posts-list {
+   .blurb .posts-list,
+   footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
