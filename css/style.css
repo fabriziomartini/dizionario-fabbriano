@@ -108,4 +108,10 @@ div.blurb {
    .blurb .posts-list li {
       max-width: 100%; /* o un valore appropriato */
    }
+   .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; /* Spazio tra le colonne */
+    align-items: center; /* Allineamento verticale al centro */
+  }
 }
