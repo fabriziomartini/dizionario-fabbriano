@@ -1,83 +1,94 @@
-/* This is the main CSS file renamed as style */
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0;
 }
+
+.blurb .posts-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border: 2px solid red; /* Aggiungi questo per diagnosticare */
+}
+
+/* Imposta larghezza massima per gli elementi della lista */
+.blurb .posts-list li {
+    max-width: 100%; /* o un valore appropriato */
+}
+
+/* Stili generici */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     text-align: left !important;
 }
+
 h2 {
     font-size: 32px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul, ol {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
-ul.posts li {
+ul li, ol li {
     list-style: none;
     font-size: 0.9em;
-}
-
-ol.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ol.posts li {
-    list-style: none;
-    font-size: 0.9em;
-}
-
-ol {
-  font-size: 1.5em;
-  line-height: 1.4em;
-  color: #333;
 }
 
 div.blurb {
-  text-align: justify;
+    text-align: justify;
 }
 
+/* Media Query */
 @media only screen and (min-width: 768px) {
-    .w3-container {
-        display: flex;
-        justify-content: space-between;
+    .blurb .posts-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        border: 2px solid red; /* Aggiungi questo per diagnosticare */
     }
-    ol.posts {
-        flex-basis: 48%; /* Ajust the width as needed */
-        margin: 0;
-        padding: 0;
+
+    /* Imposta larghezza massima per gli elementi della lista */
+    .blurb .posts-list li {
+        max-width: 100%; /* o un valore appropriato */
     }
 }
