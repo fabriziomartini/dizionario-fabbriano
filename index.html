@@ -30,7 +30,19 @@
       <meta property="og:title" content="Il Dizionario Fabbriano" />
       <meta property="og:description" content="Una raccolta del migliore armamentario linguistico sfoggiato da Dario Fabbri." />
       
-      <!-- End -->     
+      <!-- End -->
+      <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footerContainer').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Errore nel caricamento del footer:', error);
+            });
+    });
+</script>  
    </head>
 	<body>
       <!-- START Menu Navigation -->         
@@ -121,10 +133,7 @@
             </ol>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
-<div class="w3-container">
-<footer>
-         Contattami&nbsp;via&nbsp;<a href="mailto:info@fabriziomartini.com">email</a><br>Creato&nbsp;da&nbsp;<a href="https://github.com/fabriziomartini">github.com/fabriziomartini</a>
-</footer>
-</div>
-	</body>
+<!-- Un nuovo div vuoto dove verrà inserito il footer -->
+    <div id="footerContainer"></div>
+  </body>
 </html>
