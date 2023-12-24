@@ -80,15 +80,16 @@ div.blurb {
 
 /* Media Query */
 @media only screen and (min-width: 768px) {
-    .blurb .posts-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        border: 2px solid red; /* Aggiungi questo per diagnosticare */
-    }
+   .blurb .posts-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      border: 2px solid red; /* Aggiungi questo per diagnosticare */
+   }
 
-    /* Imposta larghezza massima per gli elementi della lista */
-    .blurb .posts-list li {
-        max-width: 100%; /* o un valore appropriato */
-    }
+   /* Imposta larghezza massima per gli elementi della lista */
+   .blurb .posts-list li {
+      max-width: 100%; /* o un valore appropriato */
+   }
 }
+
