@@ -84,7 +84,6 @@ div.blurb {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
-      border: 2px solid red; /* Aggiungi questo per diagnosticare */
    }
 
    /* Imposta larghezza massima per gli elementi della lista */
